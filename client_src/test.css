@@ -1,0 +1,11 @@
+.stripedOdd {
+    background-color: lightgray;
+}
+
+.stripedEven {
+    background-color: white;
+}
+
+.stripedOdd, .stripedEven {
+    padding: 15px;
+}
