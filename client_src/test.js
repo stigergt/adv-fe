@@ -5,14 +5,15 @@ $(document).ready(function() {
     var postsJsonTemplate = Handlebars.compile(postsJsonTemplateRaw);
     var postsTableTemplate = Handlebars.compile(postsTableTemplateRaw);
     
-    Handlebars.registerHelper('json', function(properties){
-       console.log(properties);
-       return JSON.stringify(properties.slice(5,8), null, 1); 
+    Handlebars.registerHelper('json', function(posts){
+       console.log(posts);
+       return JSON.stringify(posts.slice(5,8), null, 1); 
     });
     
-    Handlebars.registerHelper('table', function(text, options) {
-        return text.map(function(property, i) {
-            return ('<div' + (i%2?' class=stripedEven':' class = stripedOdd') + '>' + options.fn(property) + '</div>');
+    Handlebars.registerHelper('table', function(posts, options) {
+        return posts.map(function(post, number) { 
+            if (number >= 2 && number < 8) {         
+                return ('<div' + (number%2?' class=stripedEven':' class = stripedOdd') + '>' + options.fn(post) + '</div>')};
         }).join('');
     });
     

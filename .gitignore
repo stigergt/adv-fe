@@ -1,0 +1,11 @@
+**/**
+!client_src/data.js
+!client_src/test.js
+!client_src/test.html
+!client_src/test.css
+!bower.json
+!package.json
+!.bowerrc
+!.gitignore
+!app.js
+
