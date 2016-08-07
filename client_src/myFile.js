@@ -49,7 +49,7 @@ $(document).ready(function() {
         }
     ]
     
-    
+    console.log(Data.getPeople());
     var templateRaw = $('#person').html();
     var template = Handlebars.compile(templateRaw);
 //    Handlebars.registerHelper('name', data.name);
@@ -57,7 +57,7 @@ $(document).ready(function() {
 //     Handlebars.registerHelper('surname', data.surname);
     
     var html = template({
-        name: Data.getPerson()
+        data: Data.getPerson()
     });
     
     $('#temp').html(html);
