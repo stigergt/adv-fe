@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script src="libs/handlebars/handlebars.js"></script>
+    <link rel="stylesheet" href="myFile.css">
 </head>
 <body>
    <div id="temp"></div>
    
    <script type="text/x-handlebars-template" id="person">
-       <div class="wrapper">
-           <div class="name">
-               {{data.name}}
-           </div>
-           <div class="surname">
-               {{data.surname}}
-           </div>
+      <div class="wrapper">
+        {{#each person}}
+          <div class="person-list">
+              <div class="name">
+                  {{name}}
+              </div>
+              <div class="surname">
+                  {{surname}}
+              </div>
+              <div class="age">
+                  {{age}}
+              </div>
+               <div class="hobby">
+                  {{hobby}}
+              </div>
+               <div class="wife">
+                  {{wife}}
+              </div>
+          </div>
+          {{/each}}
        </div>
            
    </script>

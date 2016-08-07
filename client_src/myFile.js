@@ -57,7 +57,8 @@ $(document).ready(function() {
 //     Handlebars.registerHelper('surname', data.surname);
     
     var html = template({
-        data: Data.getPerson()
+//        person: Data.getPerson()
+        person:Data.getPeople()
     });
     
     $('#temp').html(html);

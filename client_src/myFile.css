@@ -1,7 +1,4 @@
-.name {
+.name, .surname, .age, .hobby, .wife {
     display: inline-block;
-}
-
-.surname {
-    display: inline-block;
+    width: 100px;
 }
