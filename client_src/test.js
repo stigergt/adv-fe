@@ -30,8 +30,4 @@ $(document).ready(function() {
         var html = postsTableTemplate({posts: Data.getPosts()});
         $('.posts-table').html(html);
     }
-    
-    
-    
-    
 });
