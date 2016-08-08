@@ -14,7 +14,7 @@ $(document).ready(function() {
         return posts.map(function(post, number) { 
             if (number >= 2 && number < 8) {
                 var className = (number % 2) ? "stripedEven" : "stripedOdd";
-                return ('<div' + className + '>' + options.fn(post) + '</div>')};
+                return ('<div class=' + className + '>' + options.fn(post) + '</div>')};
         }).join('');
     });
     
