@@ -2,7 +2,7 @@
   "name": "adv-fe",
   "version": "1.0.0",
   "scripts": {
-  "start": "node apps.js"
+  "start": "node app.js"
   },
   "dependencies": {
     "express": "^4.14.0",
