@@ -1,7 +1,9 @@
 {
   "name": "adv-fe",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+  "start": "node apps.js"
+  },
   "dependencies": {
     "express": "^4.14.0",
 	"gulp":"^3",

@@ -12,8 +12,9 @@ $(document).ready(function() {
     
     Handlebars.registerHelper('table', function(posts, options) {
         return posts.map(function(post, number) { 
-            if (number >= 2 && number < 8) {         
-                return ('<div' + (number%2?' class=stripedEven':' class = stripedOdd') + '>' + options.fn(post) + '</div>')};
+            if (number >= 2 && number < 8) {
+                var className = (number % 2) ? "stripedEven" : "stripedOdd";
+                return ('<div' + className + '>' + options.fn(post) + '</div>')};
         }).join('');
     });
     
